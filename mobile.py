@@ -71,7 +71,7 @@ if uploaded_file is not None:
         st.write(data[(data['Storage'] >= 64) & (data['RAM'] == 6)])
 
     if st.checkbox("Show Mean value of each column against each 'RAM'"):
-        st.write(data.('RAM').mean())
+        st.write(data.groupby('RAM').mean())
 
     if st.checkbox("Show Minimum value of each column against each 'Storage'"):
         st.write(data.groupby('Storage').min())
