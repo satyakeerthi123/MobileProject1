@@ -62,33 +62,10 @@ if uploaded_file is not None:
     if st.checkbox("Show unique models of'Apple'Brand"):
         st.write(data[data['Brand'] == 'Apple'])
 
-    if st.checkbox("Show number of times 'ScreenSize is exactly 6.5(inches)'"):
-        st.write(data[data['ScreenSize'] == '6.5'])
-        
-    if st.checkbox("Show number of times 'Oppo was exactly 5000(mAh) Battery Capacity'"):
-        st.write(data[(data['Brand'] =='Oppo') & (data.Battery == 5000)])
-
     if st.checkbox("Show all instances when 'Max' was recorded"):
         st.write(data[data['Model'].str.contains('Max')])
 
-    if st.checkbox("Show all instances when 'Storage is above 64(GB)' and 'RAM is exactly 6'"):
-        st.write(data[(data['Storage'] >= 64) & (data['RAM'] == 6)])
-
-    if st.checkbox("Show Mean value of each column against each 'RAM'"):
-        st.write(data.groupby('RAM').mean())
-
-    if st.checkbox("Show Minimum value of each column against each 'Storage'"):
-        st.write(data.groupby('Storage').min())
-
-    if st.checkbox("Show Maximum value of each column against each 'Storage'"):
-        st.write(data.groupby('Storage').max())
-
-    if st.checkbox("Show all records where 'Price' is '$799' "):
-        st.write(data[data['Price($)'] == '799' ])
-
-    if st.checkbox("Show all instances when 'Brand equal to Oneplus' or 'Price is above $599'"):
-        st.write(data[(data['Brand'] == 'OnePlus') | (data['Price($)'] > '599' )])
-
+   
     if st.checkbox("show the' Distribution of Brands '"):
           st.write("## Distribution of Brands")
           # Create histogram of temperatures
