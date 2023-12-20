@@ -11,6 +11,7 @@ logo = Image.open('logo1.png')
 #to run streamlit :   streamlit run weathertest.py 
 st.set_page_config(page_title="Mobile  EDA", page_icon=":bar_chart:", layout="wide")
 st.image(logo)
+st.title("CSE DEPARTMENT")
 st.title("Exploratory Data Analysis on Mobile Dataset")
 # File upload
 uploaded_file = st.file_uploader("Choose a Mobile Dataset csv")
@@ -18,7 +19,7 @@ if uploaded_file is not None:
     data=pd.read_csv(uploaded_file)
     st.dataframe(data)
 # Define the list of names
-    names = ["K.Keerthi", "T.Poojitha", "K.Saran Sai","G.Sruthi","K.Sanjay","N.Durga Prasad","V.N.Karthik"]
+    names = ["K.Keerthi", "T.Poojitha","V.N.Karthik", "K.Saran Sai","G.Sruthi","N.Durga Prasad","K.Sanjay"]
 
 # Add the names to the sidebar
     st.sidebar.title("Project Team Members:")
