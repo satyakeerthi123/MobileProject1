@@ -29,6 +29,7 @@ if uploaded_file is not None:
 
     st.sidebar.title("Under The Guidance of :")
     st.sidebar.write("Dr.Bomma.Ramakrishna")
+    st.sidebar.write("P.Srinivasulu")
     st.title("Mobile Data Analysis")
 
     if st.checkbox("Show raw data"):
