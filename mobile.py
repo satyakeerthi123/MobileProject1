@@ -77,15 +77,7 @@ if uploaded_file is not None:
           st.pyplot(fig)
      #Is there a relationship between temperature and visibility?
      # Data visualization question
-    if st.checkbox(" show the 'Relation between Storage and RAM '"):
-          st.write("## Relationship between Storage and RAM")
-          # Create scatterplot of temperature and visibility
-          fig, ax = plt.subplots()
-          sns.scatterplot(data=data, x="Storage", y="RAM", ax=ax)
-          ax.set_xlabel("Storage(GB)")
-          ax.set_ylabel("RAM(GB)")
-          # Display scatterplot
-          st.pyplot(fig) 
+    
     
     if st.checkbox("show the custom relationships"):
           st.write("## Custom comparisions")
